@@ -12,6 +12,7 @@
     <modules>
         <module>gofy-admin</module>
         <module>gofy-framework</module>
+        <module>gofy-common</module>
     </modules>
 
 
@@ -20,6 +21,8 @@
         <java.version>1.8</java.version>
         <kaptcha.version>2.3.3</kaptcha.version>
         <gofy.version>0.0.1</gofy.version>
+        <test.version>2.7.16</test.version>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
 
@@ -34,6 +37,14 @@
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
+
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter-test</artifactId>
+                <version>${test.version}</version>
+                <scope>test</scope>
+            </dependency>
+
             <!--验证码-->
             <dependency>
                 <groupId>pro.fessional</groupId>
@@ -47,15 +58,27 @@
                 <artifactId>gofy-framework</artifactId>
                 <version>${gofy.version}</version>
             </dependency>
+
+            <dependency>
+                <groupId>com.gofy</groupId>
+                <artifactId>gofy-common</artifactId>
+                <version>${gofy.version}</version>
+            </dependency>
+
         </dependencies>
     </dependencyManagement>
-
 
     <build>
         <plugins>
             <plugin>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-maven-plugin</artifactId>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.1</version>
+                <configuration>
+                    <source>${java.version}</source>
+                    <target>${java.version}</target>
+                    <encoding>${project.build.sourceEncoding}</encoding>
+                </configuration>
             </plugin>
         </plugins>
     </build>
