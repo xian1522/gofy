@@ -9,11 +9,13 @@ import org.junit.jupiter.api.Test;
 import sun.nio.ch.IOUtil;
 
 import javax.imageio.ImageIO;
+import javax.servlet.ServletOutputStream;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
+import java.text.SimpleDateFormat;
 import java.util.Properties;
 
 import static com.google.code.kaptcha.Constants.*;
@@ -38,5 +40,17 @@ public class CaptchaTest {
         IOUtils.closeQuietly(fileOutputStream);
         System.out.println(text);
 
+    }
+
+    @Test
+    public void getTime(){
+        SimpleDateFormat dateformat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+        String dateStr = dateformat.format(1693425622998L);
+        String dateStr1 = dateformat.format(1693426243412L);
+
+        System.out.println(dateStr + "----" + dateStr1);
+
+        double random = Math.random();
+        System.out.println(random + "------" + Math.round(random * 2));
     }
 }

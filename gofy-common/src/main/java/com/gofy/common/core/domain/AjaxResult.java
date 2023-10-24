@@ -30,6 +30,16 @@ public class AjaxResult extends HashMap<String, Object> {
         return AjaxResult.success("操作成功");
     }
 
+    public static AjaxResult error(String message, Object data){
+        return new AjaxResult(HttpStatus.ERROR, message, data);
+    }
+    public static AjaxResult error(String message){
+        return AjaxResult.error(message, null);
+    }
+    public static AjaxResult error(){
+        return AjaxResult.error("操作失败");
+    }
+
 
     @Override
     public AjaxResult put(String key, Object value){
