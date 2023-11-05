@@ -22,6 +22,8 @@
         <kaptcha.version>2.3.3</kaptcha.version>
         <gofy.version>0.0.1</gofy.version>
         <test.version>2.7.16</test.version>
+        <druid.version>1.2.16</druid.version>
+        <pagehelper.boot.version>1.4.6</pagehelper.boot.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
@@ -52,11 +54,24 @@
                 <version>${kaptcha.version}</version>
             </dependency>
 
+            <!-- 阿里数据库连接池 -->
+            <dependency>
+                <groupId>com.alibaba</groupId>
+                <artifactId>druid-spring-boot-starter</artifactId>
+                <version>${druid.version}</version>
+            </dependency>
+
             <!-- 核心模块-->
             <dependency>
                 <groupId>com.gofy</groupId>
                 <artifactId>gofy-framework</artifactId>
                 <version>${gofy.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.github.pagehelper</groupId>
+                <artifactId>pagehelper-spring-boot-starter</artifactId>
+                <version>${pagehelper.boot.version}</version>
             </dependency>
 
             <dependency>

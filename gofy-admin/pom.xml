@@ -13,11 +13,17 @@
     <artifactId>gofy-admin</artifactId>
 
     <dependencies>
+        <!-- Mysql驱动包 -->
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>8.0.29</version>
+        </dependency>
+
         <dependency>
             <groupId>com.gofy</groupId>
             <artifactId>gofy-framework</artifactId>
         </dependency>
-
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
