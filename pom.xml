@@ -13,6 +13,7 @@
         <module>gofy-admin</module>
         <module>gofy-framework</module>
         <module>gofy-common</module>
+        <module>gofy-system</module>
     </modules>
 
 
