@@ -2,8 +2,8 @@
 <!DOCTYPE mapper
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.gofy.system.mapper.ISysConfigMapper">
-    <resultMap id="SysConfigResult" type="com.gofy.system.domain.SysConfig">
+<mapper namespace="com.gofy.system.mapper.SysConfigMapper">
+    <resultMap id="SysConfigResult" type="SysConfig">
 
     </resultMap>
 </mapper>

@@ -81,6 +81,12 @@
                 <version>${gofy.version}</version>
             </dependency>
 
+            <dependency>
+                <groupId>com.gofy</groupId>
+                <artifactId>gofy-system</artifactId>
+                <version>${gofy.version}</version>
+            </dependency>
+
         </dependencies>
     </dependencyManagement>
 

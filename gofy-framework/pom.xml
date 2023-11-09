@@ -40,11 +40,11 @@
             <scope>test</scope>
         </dependency>
 
+        <!-- 系统模块-->
         <dependency>
             <groupId>com.gofy</groupId>
-            <artifactId>gofy-common</artifactId>
+            <artifactId>gofy-system</artifactId>
         </dependency>
-
     </dependencies>
 
 </project>
